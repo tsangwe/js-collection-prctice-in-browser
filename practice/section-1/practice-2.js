@@ -1,7 +1,7 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  var result = [];
+  let result = [];
 
   collectionA.forEach(elementFromA => {
     collectionB.forEach(innerArrayFromB => {

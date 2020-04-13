@@ -1,16 +1,16 @@
 'use strict';
 
 function collectSameElements(collectionA, objectB) {
-  var result = [];
+  let result = [];
 
-  for (var i = 0; i < collectionA.length; i++) {
-    var valueList = collectionB[value];
-    for (var j = 0; j < valueList.length; j++) {
-      if (collectionA[i] == valueList[j]) {
-        result.push(collectionA[i]);
+  collectionA.forEach(elementFromA => {
+    let valueList = objectB["value"];
+    valueList.forEach(elementFromValueList => {
+      if (elementFromA == elementFromValueList) {
+        result.push(elementFromA);
       }
-    }
-  }
-
+    })
+  });
+  
   return result;
 }
