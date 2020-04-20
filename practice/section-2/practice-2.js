@@ -22,7 +22,5 @@ function countSameElements(collection) {
     }
   });
 
-  console.log(result);
-
   return result;
 }
